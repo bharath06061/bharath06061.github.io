@@ -202,7 +202,7 @@ x.addEventListener("click", () => {
 let y = document.querySelector("#addmintwo")
 y.addEventListener("click", () => {
     countimage2++
-    let imageno = [84, 67, 63, 73, 58, 47, 46, 43, 39, 28, 13, 4, 2];
+    let imageno = [84, 67, 63, 73, 58,46, 43, 39, 28, 13, 4, 2];
     let randomnum = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
     let imagediv2 = document.querySelector("#imagediv2")
