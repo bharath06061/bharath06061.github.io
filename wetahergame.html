@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weathergame.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>game</title>
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="/myweatherapp.html">Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" aria-current="page" href="/myweatherapp.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="/wetahergame.html">game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class=" h3 text-success text-center col-3" id="divone">Select one of the option</div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="form-check form-check-inline col">
+
+                <input class="form-check-input" type="radio" id="inlineRadio1" name="temperature"
+                    value="low temperature game">
+                <label class="form-check-label h6 text-success" for="inlineRadio1">low tempearature game</label>
+            </div>
+            <div class="form-check form-check-inline col">
+                <input class="form-check-input" type="radio" id="inlineRadio2" name="temperature"
+                    value="high tempearature game">
+                <label class="form-check-label h6 text-success" for="inlineRadio2">high temperature game</label>
+            </div>
+
+
+            <button type="button" class="btn btn-primary bg-success text-white col"
+                onclick="displayRadioValue()">Submit</button>
+            </button>
+        </div>
+    </div>
+    <br><br>
+
+
+    <div>
+
+        <div id="result" class="h5 text-uppercase text-success"></div>
+    </div>
+    <br><br><br><br>
+
+
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-6 ">
+                <button type="button" class="btn btn-success " id="addminone">Add minion</button>
+            </div>
+            <div class="col-6 ">
+                <button type="button" class="btn btn-success " id="addmintwo">Add minion</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>s
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group flex-nowrap ">
+                    <div id="imagediv1"></div>
+                    <div id="imagediv3"></div>
+                    <span class="input-group-text bg-success text-white" id="addon-wrapping">player 1</span>
+                    <input id="city1" type="text" class="form-control" placeholder="enter city" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="input-group flex-nowrap ">
+                    <div id="imagediv2"></div>
+                    <span class="input-group-text bg-success text-white" id="addon-wrapping">player 2</span>
+                    <input id="city2" type="text" class="form-control" placeholder="enter city" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <ul id="list" class="h4 text-uppercase text-success">
+                    <h2>player one city list</h2>
+                </ul>
+                <h2 class="total1"></h2>
+
+            </div>
+
+            <div class="col">
+                <ul id="list2" class="h4 text-uppercase text-success">
+                    <h2>player two city list</h2>
+                </ul>
+                <h2 class="total2"></h2>
+
+            </div>
+
+            <h2 id="winner" class="text-uppercase text-center text-danger"></h2>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="weathergame.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
