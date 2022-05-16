@@ -123,10 +123,12 @@ let weather = {
             } else if (x === y) {
                 winner.innerText = "draw"
                 
-                let img1=document.querySelector("#winnerimage1")
-                img1.src="https://pngimg.com/uploads/minions/small/minions_PNG83.png"
-                img1.id="winnerimage2"
-                imagediv3.appendChild(img1)
+                let img1=document.querySelector("#imagediv3")
+                let img3=document.createElement("img")
+
+                img3.src="https://pngimg.com/uploads/minions/minions_PNG41.png"
+                img3.id="winnerimage2"
+                imagediv3.appendChild(img3)
             } else {
                 winner.innerText = "winner  is player 2"
                

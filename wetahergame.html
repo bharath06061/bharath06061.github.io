@@ -33,103 +33,134 @@
     </nav>
 
     <div class="container">
-        <div class=" h3 text-success text-center col-3" id="divone">Select one of the option</div>
+
+
+        <div class="row">
+        <div class=" h3 text-success text-center col-sm-3" id="divone">Select one of the option</div>
+        
+        
     </div>
+    </div>
+
+ 
+
     
+
     <div class="container">
         <div class="row">
-            <div class="form-check form-check-inline col">
+            <div class="form-check form-check-inline col-sm">
 
                 <input class="form-check-input" type="radio" id="inlineRadio1" name="temperature"
                     value="low temperature game">
                 <label class="form-check-label h6 text-success" for="inlineRadio1">low tempearature game</label>
             </div>
-            <div class="form-check form-check-inline col">
+            <div class="form-check form-check-inline col-sm">
                 <input class="form-check-input" type="radio" id="inlineRadio2" name="temperature"
                     value="high tempearature game">
                 <label class="form-check-label h6 text-success" for="inlineRadio2">high temperature game</label>
             </div>
 
 
-            <button type="button" class="btn btn-primary bg-success text-white col"
+            <button type="button" class="btn btn-primary bg-success text-white col-sm"
                 onclick="displayRadioValue()">Submit</button>
             </button>
         </div>
     </div>
+<br>
+    <div id="result" class="h3 text-uppercase text-danger "></div>
+
+
+
     <br><br>
 
 
-    <div>
-
-        <div id="result" class="h5 text-uppercase text-success"></div>
-    </div>
-    <br><br><br><br>
 
 
 
-    <div class="container ">
-        <div class="row">
-            <div class="col-6 ">
-                <button type="button" class="btn btn-success " id="addminone">Add minion</button>
-            </div>
-            <div class="col-6 ">
-                <button type="button" class="btn btn-success " id="addmintwo">Add minion</button>
-            </div>
-        </div>
-    </div>
+   
 
 
 
-    <br><br>s
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div class="input-group flex-nowrap ">
-                    <div id="imagediv1"></div>
-                    <div id="imagediv3"></div>
+            <div class="col-sm-6">
+                <div class="d-flex justify-content-center">
+                <div id="imagediv1" class="img-fluid"></div>
+                <div class="">
+                    <button type="button" class="btn btn-success " id="addminone">Add minion</button>
+                </div>
+            </div>
+                <br>
+                <div class="input-group mb-3">
                     <span class="input-group-text bg-success text-white" id="addon-wrapping">player 1</span>
                     <input id="city1" type="text" class="form-control" placeholder="enter city" aria-label="Username"
                         aria-describedby="addon-wrapping">
                 </div>
-
-            </div>
-            <div class="col-6">
-                <div class="input-group flex-nowrap ">
-                    <div id="imagediv2"></div>
-                    <span class="input-group-text bg-success text-white" id="addon-wrapping">player 2</span>
-                    <input id="city2" type="text" class="form-control" placeholder="enter city" aria-label="Username"
-                        aria-describedby="addon-wrapping">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br><br><br>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
                 <ul id="list" class="h4 text-uppercase text-success">
                     <h2>player one city list</h2>
                 </ul>
                 <h2 class="total1"></h2>
-
             </div>
 
-            <div class="col">
+
+
+
+
+
+
+
+            <div class="col-sm-6">
+                <div class="d-flex justify-content-center">
+                <div id="imagediv2"></div>
+                <div class="">
+                    <button type="button" class="btn btn-success " id="addmintwo">Add minion</button>
+                </div>
+            </div>
+                <br>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-white" id="addon-wrapping">player 2</span>
+
+                    <input id="city2" type="text" class="form-control " placeholder="enter city" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
                 <ul id="list2" class="h4 text-uppercase text-success">
                     <h2>player two city list</h2>
                 </ul>
                 <h2 class="total2"></h2>
-
             </div>
-
-            <h2 id="winner" class="text-uppercase text-center text-danger"></h2>
 
         </div>
     </div>
+
+
+<div class="container">
+
+    <div class="d-flex justify-content-center row">
+
+       <div class="col-sm-4 text-uppercase text-center text-danger  display-1" id="winner" ></div>
+        <div id="imagediv3" class="col-sm-8 "></div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

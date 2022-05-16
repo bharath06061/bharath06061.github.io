@@ -9,37 +9,3 @@
     height: 150px;
     
 }
-#imagediv1{
-    width: 120px;
-    height: 120px;
-    
-    
-    position: absolute;
-    top:0;
-    bottom: 300px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#imagediv2{
-    width: 120px;
-    height: 120px;
-    
-    
-    position: absolute;
-    top:0;
-    bottom: 300px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#imagediv3{
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top:0;
-    bottom: 300px;
-    left: 550px;
-    right: 00px;
-    margin: auto;
-}
